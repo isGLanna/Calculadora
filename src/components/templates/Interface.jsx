@@ -16,10 +16,10 @@ function App() {
         prevInput = "" :
         prevInput.trimEnd().slice(0, -1).trimEnd());  // remover espaços caso existam
     }
-    else if(num === '='){                                       // realizar operações aritmeticas
+    else if(num === '='){                             // realizar operações aritmeticas
       setInput((prevInput) => calculadora(prevInput));
     }
-    else if (operacoes.includes(num)) {                         // adiciona operações aritmeticas
+    else if (operacoes.includes(num)) {               // adiciona operações aritmeticas
       setInput((prevInput) => 
         prevInput == "" ?
         prevInput + num :
